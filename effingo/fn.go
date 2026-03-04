@@ -12,7 +12,7 @@ func Map[T any, U any](arr []T, f func(arrElement T) U) []U {
 	return result
 }
 
-func Filter[T any, U any](arr []T, f func(arrElement T) bool) []T {
+func Filter[T any](arr []T, f func(arrElement T) bool) []T {
 	result := []T{}
 
 	for _, v := range arr {
